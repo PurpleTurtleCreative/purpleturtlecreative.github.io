@@ -39,7 +39,7 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 # Define Jekyll collections
 collections:
   completionist:
-    permalink: "/:collection/:path/"
+    permalink: "/:collection/:path:output_ext"
     output: true
 # Define which collections are used in just-the-docs
 just_the_docs:
