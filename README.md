@@ -1,7 +1,3 @@
----
-title: Welcome
-nav_order: 1
----
 # Purple Turtle Creative – Docs
 
 🚀 🐼
