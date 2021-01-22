@@ -38,26 +38,20 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 
 # Define Jekyll collections
 collections:
-  completionist:
-    permalink: "/:collection/:path/"
+  docs:
+    permalink: "/:path/"
     output: true
 # Define which collections are used in just-the-docs
 just_the_docs:
   collections:
-    completionist:
-      name: Completionist
+    docs:
+      name: Docs
 
 # Front Matter defaults: https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "pages" # only .md page documents
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # only .md page documents
+      type: "docs" # only _docs collection members
     values:
       layout: "default"
