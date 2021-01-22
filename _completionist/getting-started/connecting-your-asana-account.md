@@ -1,5 +1,5 @@
 ---
-title: Connecting Your Asana Account
+title: Connecting Asana
 parent: Getting Started
 grand_parent: Completionist
 nav_order: 1
