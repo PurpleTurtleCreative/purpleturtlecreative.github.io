@@ -55,3 +55,9 @@ defaults:
       type: "pages" # only .md page documents
     values:
       layout: "default"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # only .md page documents
+    values:
+      layout: "default"
