@@ -54,8 +54,3 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-  -
-    scope:
-      path: "/" # an empty string here means all files in the project
-    values:
-      permalink: "/:slug/"
