@@ -2,6 +2,7 @@
 title: Connecting Asana
 parent: Getting Started
 grand_parent: Completionist
+has_children: false
 nav_order: 1
 ---
 
