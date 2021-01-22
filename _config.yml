@@ -51,7 +51,13 @@ just_the_docs:
 defaults:
   -
     scope:
-      path: "/_docs" # an empty string here means all files in the project
+      path: "" # an empty string here means all files in the project
+      type: "" # only _docs collection members
+    values:
+      layout: null
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
       type: "docs" # only _docs collection members
     values:
       layout: "default"
