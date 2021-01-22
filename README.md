@@ -1,6 +1,5 @@
 ---
 title: Welcome
-has_children: false
 nav_order: 1
 ---
 # Purple Turtle Creative – Docs
