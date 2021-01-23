@@ -113,9 +113,9 @@ h2, .text-beta {
   @each $status in ('blue', 'green', 'yellow', 'red') {
 
     &-#{$status} {
-      background-color: #{$#{$status#{'-000'}}};
+      background-color: #{$#{$status}#{'-000'}};
       border-color: #{$#{$status}#{'-000'}};
-      color: #{$#{$status#{'-000'}}};
+      color: #{$#{$status}#{'-000'}};
     }
   }
 
