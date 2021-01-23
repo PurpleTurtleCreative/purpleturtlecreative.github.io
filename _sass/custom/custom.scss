@@ -110,13 +110,28 @@ h2, .text-beta {
   border: $border $grey-lt-200;
   color: $grey-dk-000;
 
-  @each $status in ('blue', 'green', 'yellow', 'red') {
+  &-info {
+    background-color: $blue-000;
+    border-color: $blue-100;
+    color: $blue-300;
+  }
 
-    &-#{$status} {
-      background-color: #{$#{$status}#{'-000'}};
-      border-color: #{$#{$status}#{'-000'}};
-      color: #{$#{$status}#{'-000'}};
-    }
+  &-success {
+    background-color: $green-000;
+    border-color: $green-100;
+    color: $green-300;
+  }
+
+  &-warning {
+    background-color: $yellow-000;
+    border-color: $yellow-100;
+    color: $yellow-300;
+  }
+
+  &-danger {
+    background-color: $red-000;
+    border-color: $red-100;
+    color: $red-300;
   }
 
   @include mq(md) {
