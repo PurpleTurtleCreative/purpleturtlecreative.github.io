@@ -58,3 +58,18 @@
 .search-result.active {
   background-color: $sidebar-color;
 }
+
+.nav-list .nav-list-item > .nav-list {
+  padding-left: 0;
+
+  > .nav-list-item {
+    margin-left: $sp-3;
+  }
+}
+
+.aux-nav {
+
+  @include mq(lg) {
+    padding-right: 0;
+  }
+}
