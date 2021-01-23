@@ -97,3 +97,29 @@ h1, .text-alpha {
 h2, .text-beta {
   font-weight: 700;
 }
+
+//
+// Custom Banner Components
+//
+
+.banner {
+  padding: 1em;
+  border-radius: 5px;
+  position: relative;
+  background-color: $grey-lt-000;
+  border: $border $grey-lt-200;
+  color: $grey-dk-000;
+
+  @each $status in (blue, green, yellow, red) {
+
+    &-#{$status} {
+      background-color: #{$status}-000;
+      border-color: #{$status}-100;
+      color: #{$status}-300;
+    }
+  }
+
+  @include breakpoint(medium) {
+    padding: 1em 1.5em;
+  }
+}
