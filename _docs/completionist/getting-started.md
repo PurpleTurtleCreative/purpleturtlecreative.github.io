@@ -40,8 +40,29 @@ Completionist may be installed by extracting the zip file contents into your `wp
 
 ## Connect Your Asana Account
 
-Visit your Asana Developer Console to generate a Personal Access Token (PAT).
+<div class="banner banner-danger">
+  <h3>
+    Asana Account Required
+  </h3>
+  <p>
+    Completionist depends on an Asana account connection to function. <a href="https://asana.com/create-account" target="_blank">Create an Asana account</a> for free before continuing this setup guide.
+  </p>
+</div>
+
+1. Navigate to the Completionist settings screen by clicking *Completionist* toward the bottom of your WordPress admin menu.
+2. In a new browser window, sign into your Asana account and [visit your Asana developer console](https://app.asana.com/0/developer-console).
+3. Click to generate a new access token at the bottom of your Asana developer console and follow the prompts.
+4. Paste your Personal Access Token into the Asana Connect form, agree to let Completionist perform actions in your Asana account on your behalf *(uh, yeah, that’s the point)*, and click *Authorize*.
+5. Once successfully connected, you'll now be able to access Completionist's settings.
 
 ## Set a Site Tag
 
-Once connected, you'll see Completionist's settings.
+The final step to get started using Completionist is to set a *"site tag"*.
+
+To ensure task lists in your WordPress area remain relevant and tidy, Completionist only retrieves Asana tasks with the chosen tag. When you no longer want Completionist to display the task on your WordPress site, simply remove the site tag from the task in Asana. If you instead remove the task from within your WordPress site using Completionist, the site tag will be removed from the task in Asana for you.
+
+A site tag is required to use Completionist to avoid hitting API limits and ensure only relevant tasks are displayed.
+
+1. In the Completionist settings screen, find the workspace settings section.
+2. Choose an Asana workspace. After making your selection, the tag options will be retrieved for selection.
+3. Once the tag options for your chosen workspace have loaded, choose the tag that Completionist will use to associate Asana tasks to your WordPress site.
