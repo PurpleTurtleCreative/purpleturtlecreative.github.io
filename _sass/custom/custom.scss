@@ -113,9 +113,9 @@ h2, .text-beta {
   @each $status in ('blue', 'green', 'yellow', 'red') {
 
     &-#{$status} {
-      background-color: $status#{'-000'};
-      border-color: $status#{'-100'};
-      color: $status#{'-300'};
+      background-color: #{$#{$status#{'-000'}}};
+      border-color: #{$#{$status}#{'-000'}};
+      color: #{$#{$status#{'-000'}}};
     }
   }
 
@@ -123,11 +123,11 @@ h2, .text-beta {
     padding: 1em 1.5em;
   }
 
-  > *:first-child {
+  > :first-child {
     margin-top: 0;
   }
 
-  > *:last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 }
