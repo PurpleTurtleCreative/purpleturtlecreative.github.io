@@ -7,9 +7,8 @@ nav_order: 1
 # Getting Started
 {: .no_toc }
 
-Test this
-
-blah
+Simply connect your Asana account and choose a tag to start managing Asana tasks on your WordPress site.
+{: .text-beta .fw-300 .text-grey-dk-000}
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -52,12 +51,12 @@ Completionist may be installed by extracting the zip file contents into your `wp
 1. Navigate to the Completionist settings screen by clicking *Completionist* toward the bottom of your WordPress admin menu.
 2. In a new browser window, sign into your Asana account and [visit your Asana developer console](https://app.asana.com/0/developer-console).
 3. Click to generate a new access token at the bottom of your Asana developer console and follow the prompts.
-4. Paste your Personal Access Token into the Asana Connect form, agree to let Completionist perform actions in your Asana account on your behalf *(uh, yeah, that’s the point)*, and click *Authorize*.
+4. Back in Completionist, paste your Personal Access Token into the Asana Connect form, agree to let Completionist perform actions in your Asana account on your behalf, and click *Authorize*.
 5. Once successfully connected, you'll now be able to access Completionist's settings.
 
 ## Set a Site Tag
 
-The final step to get started using Completionist is to set a *"site tag"*. A site tag is required to use Completionist to avoid hitting API limits and ensure only relevant tasks are displayed.
+The final step to get started using Completionist is to set a *"site tag"*. A site tag is required to use Completionist to avoid hitting API limits and to ensure only relevant tasks are displayed.
 
 1. In the Completionist settings screen, find the workspace settings section.
 2. Choose an Asana workspace. After making your selection, the tag options will be retrieved for selection.
@@ -69,7 +68,10 @@ The final step to get started using Completionist is to set a *"site tag"*. A si
     Site Tag Basics
   </h3>
   <p>
-    To ensure task lists in your WordPress area remain relevant and tidy, Completionist only retrieves Asana tasks with the chosen tag. When you no longer want Completionist to display the task on your WordPress site, simply remove the site tag from the task in Asana. If you instead remove the task from within your WordPress site using Completionist, the site tag will be removed from the task in Asana for you.
+    To ensure task lists in your WordPress area remain relevant and tidy, Completionist only retrieves Asana tasks with the chosen tag.
+  </p>
+  <p>
+    When you no longer want Completionist to display the task on your WordPress site, simply remove the site tag from the task in Asana. If you instead remove the task from within your WordPress site using Completionist, the site tag will be removed from the task in Asana for you.
   </p>
 </div>
 
