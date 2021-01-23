@@ -13,8 +13,8 @@ $grey-lt-200: #dee0ed;// ptc grey-light
 $grey-lt-300: darken($grey-lt-200, 3%);
 
 $grey-dk-000: #8c92b1;// ptc grey
-$grey-dk-100: #4a539b;
-$grey-dk-200: #343b85;
+$grey-dk-100: #6a6e8d;
+$grey-dk-200: #4f516f;
 $grey-dk-250: #202367;
 $grey-dk-300: #08082b;// ptc black
 
@@ -49,7 +49,7 @@ $table-background-color: $white;//default
 $code-background-color: $grey-lt-000;//default
 $feedback-color: darken($sidebar-color, 3%);//default
 
-$body-text-color: $grey-dk-100;//default
+$body-text-color: $grey-dk-200;
 $body-heading-color: $grey-dk-300;//default
 $search-result-preview-color: $grey-dk-000;//default
 $nav-child-link-color: $grey-dk-100;//default
