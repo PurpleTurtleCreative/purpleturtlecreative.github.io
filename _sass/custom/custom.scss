@@ -103,8 +103,9 @@ h2, .text-beta {
 //
 
 .banner {
-  padding: 1em;
-  border-radius: 5px;
+  padding: 1.25em 1.5em;
+  margin: 1.25em 0;
+  border-radius: $border-radius;
   position: relative;
   background-color: $grey-lt-000;
   border: $border $grey-lt-200;
@@ -138,11 +139,19 @@ h2, .text-beta {
     padding: 1em 1.5em;
   }
 
+  * {
+    color: inherit !important;
+  }
+
+  > p:first-of-type {
+    margin-top: .75em;
+  }
+
   > :first-child {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
   > :last-child {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 }
