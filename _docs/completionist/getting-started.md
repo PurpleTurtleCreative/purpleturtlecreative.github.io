@@ -57,12 +57,19 @@ Completionist may be installed by extracting the zip file contents into your `wp
 
 ## Set a Site Tag
 
-The final step to get started using Completionist is to set a *"site tag"*.
-
-To ensure task lists in your WordPress area remain relevant and tidy, Completionist only retrieves Asana tasks with the chosen tag. When you no longer want Completionist to display the task on your WordPress site, simply remove the site tag from the task in Asana. If you instead remove the task from within your WordPress site using Completionist, the site tag will be removed from the task in Asana for you.
-
-A site tag is required to use Completionist to avoid hitting API limits and ensure only relevant tasks are displayed.
+The final step to get started using Completionist is to set a *"site tag"*. A site tag is required to use Completionist to avoid hitting API limits and ensure only relevant tasks are displayed.
 
 1. In the Completionist settings screen, find the workspace settings section.
 2. Choose an Asana workspace. After making your selection, the tag options will be retrieved for selection.
 3. Once the tag options for your chosen workspace have loaded, choose the tag that Completionist will use to associate Asana tasks to your WordPress site.
+4. Click *Save* to confirm your chosen workspace and site tag.
+
+<div class="banner">
+  <h3>
+    Site Tag Basics
+  </h3>
+  <p>
+    To ensure task lists in your WordPress area remain relevant and tidy, Completionist only retrieves Asana tasks with the chosen tag. When you no longer want Completionist to display the task on your WordPress site, simply remove the site tag from the task in Asana. If you instead remove the task from within your WordPress site using Completionist, the site tag will be removed from the task in Asana for you.
+  </p>
+</div>
+

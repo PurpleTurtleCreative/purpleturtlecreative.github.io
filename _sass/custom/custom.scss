@@ -142,7 +142,7 @@ h6, .text-zeta {
     padding: 1.25em;
   }
 
-  * {
+  :not(a) {
     color: inherit !important;
   }
 
