@@ -1,5 +1,9 @@
 // see https://github.com/pmarsceill/just-the-docs/blob/master/_sass/layout.scss
 
+//
+// Full-width Layout
+//
+
 .side-bar {
 
   @include mq(lg) {
@@ -26,4 +30,31 @@
       }
     }
   }
+}
+
+
+//
+// Style Overrides
+//
+
+.site-title {
+
+  @include mq(lg) {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+  }
+
+  .site-logo {
+    background-position: center;
+  }
+}
+
+.nav-list .nav-list-item .nav-list-link:hover,
+.nav-list .nav-list-item .nav-list-link.active {
+  background: $feedback-color;
+}
+
+.search-result:hover,
+.search-result.active {
+  background-color: $sidebar-color;
 }
