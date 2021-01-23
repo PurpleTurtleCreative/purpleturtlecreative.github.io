@@ -49,6 +49,7 @@
   }
 }
 
+// Nav hovers
 .nav-list .nav-list-item .nav-list-link:hover,
 .nav-list .nav-list-item .nav-list-link.active {
   background: $feedback-color;
@@ -59,17 +60,39 @@
   background-color: $sidebar-color;
 }
 
+// Full width nav links
 .nav-list .nav-list-item > .nav-list {
   padding-left: 0;
-
-  > .nav-list-item {
-    margin-left: $sp-3;
-  }
 }
 
+.nav-list .nav-list a.nav-list-link:before {
+  content: '';
+  display: inline-block;
+  padding-left: $sp-3;
+}
+
+.nav-list .nav-list .nav-list a.nav-list-link:before {
+  content: '';
+  display: inline-block;
+  padding-left: #{$sp-3 * 2};
+}
+
+// Auxiliary nav
 .aux-nav {
 
   @include mq(lg) {
     padding-right: 0;
   }
+}
+
+//
+// Typography
+//
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1, .text-alpha {
+  font-weight: 800;
 }
