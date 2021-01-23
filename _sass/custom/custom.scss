@@ -119,7 +119,7 @@ h2, .text-beta {
     }
   }
 
-  @include breakpoint(medium) {
+  @include mq(md) {
     padding: 1em 1.5em;
   }
 }
