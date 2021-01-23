@@ -110,16 +110,24 @@ h2, .text-beta {
   border: $border $grey-lt-200;
   color: $grey-dk-000;
 
-  @each $status in (blue, green, yellow, red) {
+  @each $status in ('blue', 'green', 'yellow', 'red') {
 
     &-#{$status} {
-      background-color: #{$status}-000;
-      border-color: #{$status}-100;
-      color: #{$status}-300;
+      background-color: $status#{'-000'};
+      border-color: $status#{'-100'};
+      color: $status#{'-300'};
     }
   }
 
   @include mq(md) {
     padding: 1em 1.5em;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
   }
 }
