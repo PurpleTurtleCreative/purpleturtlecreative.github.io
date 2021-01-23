@@ -1,7 +1,6 @@
 ---
 title: Getting Started
 parent: Completionist
-has_children: true
 nav_order: 1
 ---
 
@@ -16,7 +15,7 @@ blah
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
