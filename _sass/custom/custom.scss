@@ -1,0 +1,9 @@
+// see https://github.com/pmarsceill/just-the-docs/blob/master/_sass/layout.scss
+
+.side-bar {
+
+  @include mq(lg) {
+    width: 0;
+    min-width: $nav-width;
+  }
+}
