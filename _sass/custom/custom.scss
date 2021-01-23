@@ -15,4 +15,15 @@
     max-width: calc(100% - #{$nav-width});
     margin-left: $nav-width;
   }
+
+  .main-content-wrap {
+
+    .main-content {
+
+      @include mq(lg) {
+        max-width: $content-width;
+        margin: 0 auto;
+      }
+    }
+  }
 }
