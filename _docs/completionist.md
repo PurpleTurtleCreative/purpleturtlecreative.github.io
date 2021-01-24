@@ -24,4 +24,5 @@ The best part is that this site's articles are hosted on GitHub which means we c
 
 I hope to hear from you soon! I'll be here in the meantime, documenting Completionist's great features.
 
-In Progress {: .label .label-yellow .m-0 }
+In Progress
+{: .label .label-yellow .m-0 }
