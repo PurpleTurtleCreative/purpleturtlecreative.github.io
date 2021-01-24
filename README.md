@@ -3,7 +3,7 @@
 Basic usage and developer documentation for all Purple Turtle Creative projects.
 {: .text-beta .fw-300 .text-grey-dk-000}
 
-[Visit Website](https://purpleturtlecreative.com/){: .btn .btn-purple }
+[Visit Website](https://purpleturtlecreative.com/){: .btn .btn-purple .mr-1 }
 [Explore WordPress Plugins](https://purpleturtlecreative.com/plugins/){: .btn }
 
 ---
@@ -20,7 +20,7 @@ Since I'm employed full-time and obsessed with web development, I'm unable to gu
 
 Additionally, you can [follow my software adventures on LinkedIn](https://www.linkedin.com/company/purple-turtle-creative). I only post major announcements and share my new blog posts, so it surely won't impose on your feed!
 
-[Send Email](mailto:michelle@purpleturtlecreative.com){: .btn .btn-purple }
+[Send Email](mailto:michelle@purpleturtlecreative.com){: .btn .btn-purple .mr-1 }
 [Follow on LinkedIn](https://www.linkedin.com/company/purple-turtle-creative){: .btn }
 
 ## Contributions
@@ -29,5 +29,5 @@ Did you notice any mistakes while reading through the docs? Well, that's embarra
 
 Even when these docs are flawless, though, I bet you still have some interesting ideas to share! You can participate in general discussions, ask questions, or share feature suggestions in the Purple Turtle Creative forum. All I ask is that you refrain from soliciting work opportunities. Let's keep threads on topic!
 
-[Start a Discussion](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/discussions){: .btn .btn-purple }
+[Start a Discussion](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/discussions){: .btn .btn-purple .mr-1 }
 [Suggest an Edit](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io){: .btn }
