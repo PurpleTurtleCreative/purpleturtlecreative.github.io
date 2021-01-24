@@ -57,6 +57,11 @@
   background-color: $sidebar-color;
 }
 
+// Nav child link color
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+  color: $grey-dk-250;
+}
+
 // Full width nav links
 .nav-list .nav-list-item > .nav-list {
   padding-left: 0;
@@ -117,8 +122,8 @@ h6, .text-zeta {
   border-radius: $border-radius;
   position: relative;
   background-color: $grey-lt-000;
-  border: $border $grey-lt-200;
-  color: $grey-dk-000;
+  border: $border $grey-lt-300;
+  color: $grey-dk-100;
 
   &-info {
     background-color: $blue-000;
