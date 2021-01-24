@@ -1,41 +1,33 @@
-# Purple Turtle Creative – Docs
+# Welcome to the Docs
 
-🚀 🐼
+Basic usage and developer documentation for all Purple Turtle Creative projects.
+{: .text-beta .fw-300 .text-grey-dk-000}
 
-yes
+[Visit Website](https://purpleturtlecreative.com/){: .btn .btn-purple }
+[Explore WordPress Plugins](https://purpleturtlecreative.com/plugins/){: .btn }
 
-You can use the [editor on GitHub](https://github.com/pmarsceill/test-jtd/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+---
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## About
 
-### Markdown
+I'm Michelle, a full-stack WordPress developer. In my spare time, I enjoy working on a few WordPress plugins of my own! I believe in quality over quantity. For that reason, I prefer finely crafting a few plugins rather than maintaining a plethora of mediocre projects.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+My favorite words are "clean", "simple", and "efficient".
 
-```markdown
-Syntax highlighted code block
+## Support
 
-# Header 1
-## Header 2
-### Header 3
+Since I'm employed full-time and obsessed with web development, I'm unable to guarantee providing support for my softwares. However, please do feel free to [email me](mailto:michelle@purpleturtlecreative.com) if you have any questions or suggestions. I'm often quick to respond and would love to hear your thoughts!
 
-- Bulleted
-- List
+Additionally, you can [follow my software adventures on LinkedIn](https://www.linkedin.com/company/purple-turtle-creative). I only post major announcements and share my new blog posts, so it surely won't impose on your feed!
 
-1. Numbered
-2. List
+[Send Email](mailto:michelle@purpleturtlecreative.com){: .btn .btn-purple }
+[Follow on LinkedIn](https://www.linkedin.com/company/purple-turtle-creative){: .btn }
 
-**Bold** and _Italic_ and `Code` text
+## Contributions
 
-[Link](url) and ![Image](src)
-```
+Did you notice any mistakes while reading through the docs? Well, that's embarrassing. Good catch, though! Please contribute a correction or suggestion by editing any article on GitHub. At the bottom of every doc, there is a handy link to [*"Edit this page on GitHub"*](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/edit/main/README.md).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Even when these docs are flawless, though, I bet you still have some interesting ideas to share! You can participate in general discussions, ask questions, or share feature suggestions in the Purple Turtle Creative forum. All I ask is that you refrain from soliciting work opportunities. Let's keep threads on topic!
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pmarsceill/test-jtd/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Start a Discussion](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/discussions){: .btn .btn-purple }
+[Suggest an Edit](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io){: .btn }
