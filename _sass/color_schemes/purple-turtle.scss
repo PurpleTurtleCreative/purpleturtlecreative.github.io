@@ -81,4 +81,4 @@ $media-queries: (
   md: $content-width,
   lg: $content-width + ( $nav-width * 1.5 ),
   xl: 1400px,
-) !default;
+);
