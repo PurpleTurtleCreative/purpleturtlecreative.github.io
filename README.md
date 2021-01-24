@@ -16,12 +16,12 @@ My favorite words are "clean", "simple", and "efficient".
 
 ## Support
 
-Since I'm employed full-time and obsessed with web development, I'm unable to guarantee providing support for my softwares. However, please do feel free to [email me](mailto:michelle@purpleturtlecreative.com) if you have any questions or suggestions. I'm often quick to respond and would love to hear your thoughts!
+Since I'm employed full-time and obsessed with web development, I'm unable to guarantee providing support for my softwares. However, please do feel free to [start a discussion](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/discussions) if you have any questions or suggestions. I'm often quick to respond and would love to hear your thoughts!
 
 Additionally, you can [follow my software adventures on LinkedIn](https://www.linkedin.com/company/purple-turtle-creative). I only post major announcements and share my new blog posts, so it surely won't impose on your feed!
 
-[Send Email](mailto:michelle@purpleturtlecreative.com){: .btn .btn-purple .mr-1 }
-[Follow on LinkedIn](https://www.linkedin.com/company/purple-turtle-creative){: .btn }
+[Report an Issue](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/discussions/categories/issues){: .btn .btn-purple .mr-1 }
+[Ask a Question](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/discussions/categories/q-a){: .btn }
 
 ## Contributions
 
