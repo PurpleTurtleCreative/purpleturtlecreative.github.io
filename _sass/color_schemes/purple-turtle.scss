@@ -70,3 +70,15 @@ $border-color: $grey-lt-100;//default
 //
 
 $search-results-width: $content-width;
+
+//
+// Media queries in pixels
+//
+
+$media-queries: (
+  xs: 320px,
+  sm: 500px,
+  md: $content-width,
+  lg: $content-width + ( $nav-width * 1.5 ),
+  xl: 1400px,
+) !default;
