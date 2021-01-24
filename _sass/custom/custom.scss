@@ -6,7 +6,7 @@
 
 .side-bar {
 
-  @include mq(lg) {
+  @include mq(md) {
     width: 0;
     min-width: $nav-width;
   }
@@ -14,7 +14,7 @@
 
 .main {
 
-  @include mq(lg) {
+  @include mq(md) {
     width: 100%;
     max-width: calc(100% - #{$nav-width});
     margin-left: $nav-width;
