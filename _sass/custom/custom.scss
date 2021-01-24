@@ -21,9 +21,9 @@
   }
 
   .main-content-wrap {
+    max-width: $content-width;
 
     @include mq(lg) {
-      max-width: $content-width;
       margin-left: calc( ( 100% - #{$nav-width} - #{$content-width} ) / 2 );
     }
   }
