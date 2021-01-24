@@ -24,7 +24,7 @@
 
     @include mq(lg) {
       max-width: $content-width;
-      margin: 0 auto;
+      margin-left: calc( ( 100% - #{$nav-width} - #{$content-width} ) / 2 );
     }
   }
 }
