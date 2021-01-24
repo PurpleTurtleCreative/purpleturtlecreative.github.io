@@ -1,6 +1,6 @@
 # Welcome to the Docs
 
-Basic usage and developer documentation for all Purple Turtle Creative projects.
+Basic usage and developer documentation for all Purple Turtle Creative projects. But you're probably here for Completionist.
 {: .text-beta .fw-300 .text-grey-dk-000}
 
 [Visit Website](https://purpleturtlecreative.com/){: .btn .btn-purple .mr-1 }
