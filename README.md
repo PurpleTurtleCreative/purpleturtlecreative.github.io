@@ -3,8 +3,8 @@
 Basic usage and developer documentation for all Purple Turtle Creative projects. But you're probably here for Completionist.
 {: .text-beta .fw-300 .text-grey-dk-000}
 
-[Visit Website](https://purpleturtlecreative.com/){: .btn .btn-purple .mr-1 }
-[Explore WordPress Plugins](https://purpleturtlecreative.com/plugins/){: .btn }
+[View Completionist Docs](https://docs.purpleturtlecreative.com/completionist/){: .btn .btn-purple .mr-1 }
+[Return to Main Site](https://purpleturtlecreative.com/){: .btn }
 
 ---
 
