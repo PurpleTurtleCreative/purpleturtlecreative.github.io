@@ -101,15 +101,12 @@ h1, .text-alpha {
   font-weight: 800;
 }
 
-h2, .text-beta {
-  font-weight: 700;
-}
-
+h2, .text-beta,
 h3, .text-gamma,
 h4, .text-delta,
 h5, .text-epsilon,
 h6, .text-zeta {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 //
