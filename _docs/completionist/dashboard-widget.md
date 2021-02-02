@@ -43,7 +43,7 @@ Each listed task has a button on its right to help you quickly get to work on th
 
 **Pinned tasks** have a blue button to edit the associated post.
 
-**Generic site tasks** have a grey button to view the task in Asana.
+**General site tasks** have a grey button to view the task in Asana.
 
 ## View More Tasks (Pagination)
 
