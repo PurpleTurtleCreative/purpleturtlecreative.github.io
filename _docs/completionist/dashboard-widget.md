@@ -26,7 +26,7 @@ Below that, a progress bar displays the number of completed site tasks out of th
 
 ## Filter Tasks
 
-By default, all incomplete tasks with the [site tag](http://localhost:8000/completionist/getting-started/setting-a-site-tag/) are listed, and tasks are ordered by due date with the most urgent tasks at the top.
+By default, all incomplete tasks with the site tag are listed, and tasks are ordered by due date with the most urgent tasks at the top.
 
 Below the progress header are four task list filters with the number of tasks each filter contains. To view all incomplete tasks again, click the progress header.
 
