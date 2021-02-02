@@ -24,20 +24,23 @@ Pinned tasks are displayed in the Tasks metabox on the edit screen of the WordPr
 
 To quickly review and access pinned tasks, check out the Dashboard Widget.
 
-<div class="banner banner-warning">
-  <h3>
-    Task Visibility
-  </h3>
-  <p>
-    There are a few reasons why a task might not be displayed even though it is pinned to the current post. Completionist respects collaborators' privacy and has automatic clean-up methods in place. Here are some reasons why a pinned task may be missing:
-  </p>
-  <ul>
-    <li>If the task no longer has the site tag, Completionist will automatically unpin the task because it is no longer relevant to the WordPress site. No worries, though! You can pin the existing Asana task back onto the post.
-</li>
-    <li>You may not be authorized to view the task in Asana. This can happen when someone pins a task that is private to them or you are not a member of the task's project. To resolve this, ask someone to add you as a follower of the task.</li>
-    <li>The request to Asana may have failed. Since tasks are hosted and managed by Asana, task data is dependent on their servers to be running smoothly. If a technical error is encountered, an error will be displayed.</li>
-  </ul>
-</div>
+###  Task Visibility
+
+There are a few reasons why a task might not be displayed even though it is pinned to the current post. Completionist respects collaborators' privacy and has automatic clean-up methods in place. Here are some reasons why a pinned task may be missing:
+
+- If **the task no longer has the site tag**, Completionist will automatically unpin the task because it is no longer relevant to the WordPress site. If this was a mistake, simply [pin the existing Asana task](#pin-an-existing-task) back onto the post.
+- **You may not be authorized to view the task in Asana.** This can happen when someone pins a task that is private to them or you are not a member of the task's project. To resolve this, ask someone to add you as a follower of the task.
+- **The request to Asana may have failed.** Since tasks are hosted and managed by Asana, task data is dependent on [Asana's API servers](https://status.asana.com/) being operational. If a technical error is encountered, an error will be displayed.
+
+### Supported Post Types
+
+Tasks can be pinned to more than just WordPress *posts* and *pages*. Many popular plugins register their own custom post types to help with data management.
+
+For example, [LearnDash](https://www.learndash.com/) registers custom post types for courses, modules, and topics. [WooCommerce](https://woocommerce.com/) implements their own custom post types for shop orders, products, and coupons.
+
+Because **Completionist supports pinning tasks on any post type in WordPress**, you can easily collaborate on all the content your team manages on WordPress.
+
+Furthermore, **Completionist is compatible with the Gutenberg block editor and WordPress Classic editor** to ensure support for all post types and preferences.
 
 ## Pin a New Task
 
