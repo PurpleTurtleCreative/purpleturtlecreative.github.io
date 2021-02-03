@@ -57,7 +57,7 @@ Up to 10 tasks are displayed per page by default.
 
 In the very bottom-right of the Completionist dashboard widget, there’s a chainlink icon. Click it to view all site tasks in Asana. This links to the site tag list of tasks in Asana.
 
-## Managing Tasks
+## Manage Tasks
 
 The dashboard widget uses the same format as the *Pinned Tasks* metabox. See [managing pinned tasks](https://docs.purpleturtlecreative.com/completionist/pinned-tasks/#manage-pinned-tasks) to understand features of the task list.
 
