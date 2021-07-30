@@ -37,8 +37,7 @@
 .site-title {
 
   @include mq(lg) {
-    padding-top: .8rem;
-    padding-bottom: .8rem;
+    padding: .6rem;
   }
 
   .site-logo {
