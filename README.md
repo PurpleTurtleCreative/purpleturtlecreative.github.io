@@ -26,7 +26,3 @@ Additionally, you can [follow my software adventures on LinkedIn](https://www.li
 ## Contributions
 
 Did you notice any mistakes while reading through the docs? Well, that's embarrassing. Good catch, though! Please contribute a correction or suggestion by editing any article on GitHub. At the bottom of every doc, there is a handy link to [*"Edit this page on GitHub"*](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io/edit/main/README.md).
-
-Even when these docs are flawless, though, I bet you still have some interesting ideas to share! You can participate in general discussions, ask questions, or share feature suggestions by [sending me an email](mailto:michelle@purpleturtlecreative.com). All I ask is that you refrain from soliciting work opportunities. Let's keep conversations on topic!
-
-[Suggest an Edit](https://github.com/PurpleTurtleCreative/purpleturtlecreative.github.io){: .btn .btn-purple .mr-1 }
