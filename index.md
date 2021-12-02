@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+nav_order: 0
+permalink: /
+---
+
 # Welcome to the Docs
 
 Basic usage and developer documentation for all Purple Turtle Creative projects. But you're probably here for Completionist.
