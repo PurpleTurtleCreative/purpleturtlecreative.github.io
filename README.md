@@ -1,8 +1,8 @@
-# Developer Notebook
+# Official Documentation
 
-This GitHub Pages-powered site was created as an alternative to GitHub Gists.
+This GitHub Pages-powered site was created to document Purple Turtle Creative softwares.
 
-This site is much more user-friendly, searchable, and customizable than the GitHub Gists interface. It's also easier and more natural to collaborate on a repository by adding and revoking collaborator access.
+*Check the site footer for copyright information.*
 
 ## Local Development
 
@@ -14,7 +14,7 @@ I'm on Mac OSX, using [Homebrew](https://brew.sh/). Add the appropriate version 
 export PATH="/usr/local/opt/ruby@2.7/bin:/usr/local/lib/ruby/gems/ruby@2.7/bin:$PATH"
 ```
 
-You'll also need [**Bundler**](https://bundler.io/) by running `gem install bundler`.
+You'll also need [Bundler](https://bundler.io/) by running `gem install bundler`.
 
 Use the following commands to build or serve the site. Use `--verbose` if you're having issues or want more detailed output.
 
