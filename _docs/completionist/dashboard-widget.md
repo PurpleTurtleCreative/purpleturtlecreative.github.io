@@ -1,7 +1,7 @@
 ---
 title: Dashboard Widget
 parent: Completionist
-nav_order: 3
+nav_order: 2
 ---
 
 # Dashboard Widget
@@ -69,4 +69,3 @@ The dashboard widget uses the same format as the *Pinned Tasks* metabox. See [ma
     The dashboard widget only displays incomplete tasks to remain actionable, so marking a task complete will hide it in the dashboard widget. To find the completed task, click the bottom-right chainlink to <a href="#view-all-site-tasks">view all site tasks in Asana</a>.
   </p>
 </div>
-
