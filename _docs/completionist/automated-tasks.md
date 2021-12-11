@@ -50,6 +50,77 @@ Add a new automation to create Asana tasks as WordPress events occur on your web
    - Pin to Post – A WordPress post to which the new Asana task will be pinned. Type in the field to search for a WordPress post by name, and then select it in the list.
 6. Click the large *Create* button at the bottom of the page to add the new Automation.
 
+### Dynamic Merge Fields
+
+The new Asana task name and description fields support dynamic merge fields. This means you can compose the automatically created Asana tasks with data from the WordPress user or post that triggered the event.
+
+Merge fields are text surrounded by curly braces `{}` and take the following format:
+
+```
+{(user|post).property}
+```
+
+If the Automation's Trigger Event is in the *User Events* group, then the merge fields must start with `user` and refer to the WordPress user associated with the event.
+
+If the Automation's Trigger Event is in the *Post Events* group, then the merge fields must start with `post` and will refer to the WordPress post associated with the event.
+
+The `property` can be any WordPress user or post (depending on which applies) record column name or meta key.
+
+Here are two use-case examples to demonstrate:
+
+1. An Automation is triggered by the *User is Created* event.
+   - The Asana task title in the Automation is:
+   
+      ```
+      Welcome new user: {user.first_name} {user.last_name}
+      ```
+      {: .ws-normal}
+   
+   - The Asana task description in the Automation is:
+   
+      ```
+      Send a personalized welcome email to {user.user_email} and review their profile at https://purpleturtlecreative.com/wp-admin/user-edit.php?user_id={user.ID}
+      ```
+      {: .ws-normal}
+   
+   - The new task in Asana would then be created with the following information, for example:
+      ```
+      Welcome new user: Michelle Blanchette
+      ```
+      {: .ws-normal}
+      
+      ```
+      Send a personalized welcome email to michelle@purpleturtlecreative.com and review their profile at https://purpleturtlecreative.com/wp-admin/user-edit.php?user_id=123
+      ```
+      {: .ws-normal}
+   
+2. An Automation is triggered by the *Post is Updated* event.
+   - The Asana task title in the Automation is:
+   
+      ```
+      Review and publish {post.post_type} #{post.ID}
+      ```
+      {: .ws-normal}
+   
+   - The Asana task description in the Automation is:
+   
+      ```
+      Author {post.post_author} is ready for "{post.post_title}" to be reviewed as of {post.post_modified}.
+      ```
+      {: .ws-normal}
+   
+   - The new task in Asana would then be created with the following information, for example:
+     
+      ```
+      Review and publish post #23
+      ```
+      {: .ws-normal}
+      
+      ```
+      Author 1 is ready for "How to Replace the WordPress Cron with a Linux Cron Job" to be reviewed as of 2021-12-11 10:28:32.
+      ```
+      {: .ws-normal}
+
 ## Review Automation Statistics
 
 In the main Automations screen, all Automations are listed with useful information:
