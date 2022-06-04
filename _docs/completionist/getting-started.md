@@ -74,4 +74,3 @@ The final step to get started using Completionist is to set a *"site tag"*. A si
     When you no longer want Completionist to display the task on your WordPress site, simply remove the site tag from the task in Asana. If you instead remove the task from within your WordPress site using Completionist, the site tag will be removed from the task in Asana for you.
   </p>
 </div>
-
