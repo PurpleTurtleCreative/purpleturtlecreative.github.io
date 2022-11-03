@@ -70,6 +70,11 @@ Pulling Asana tasks into WordPress by a specific tag has many benefits, such as:
 
 ## Set a Frontend Authentication User
 
+<div class="banner banner-warning">
+	<h3>Coming Soon</h3>
+  <p>Completionist will soon offer frontend features! Please hang tight as the next version of Completionist will be released within a few days!</p>
+</div>
+
 If you'd like to use Completionist's shortcodes on your WordPress website, you should specify a default "frontend authentication user".
 
 1. From the dropdown options, select a WordPress user. Only users that have connected their Asana account with Completionist will be listed.

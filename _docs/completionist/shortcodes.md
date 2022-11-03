@@ -24,6 +24,11 @@ Displays Asana project information and tasks.
 
 Only the "list" layout is currently used, but support for the "board" layout is planned to also be implemented.
 
+<div class="banner banner-warning">
+	<h3>Coming Soon</h3>
+  <p>This is the first frontend feature of Completionist! It will be available in the next version of Completionist—which will be released within a few days!</p>
+</div>
+
 **Attributes:**
 
 - `src` – **Required.** The Asana project link.
