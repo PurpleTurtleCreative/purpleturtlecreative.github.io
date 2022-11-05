@@ -18,16 +18,50 @@ Display Asana tasks on your website to improve work transparency and collaborati
 
 ---
 
+## Caching
+
+**Frontend requests are cached by default for 15 minutes.** This improves website performance by reducing the frequency that data is requested from Asana.
+
+### Changing the cache TTL
+
+If you find that Asana data is not being updated often enough, you may implement the following filter hook.
+
+<div class="banner banner-warning">
+  Please seek a WordPress developer for guidance if you're not familiar with adding custom code to your website.
+</div>
+
+This reduces the cache duration to 5 minutes:
+
+```php
+add_filter( 'ptc_completionist_request_tokens_ttl', 'ptc_get_request_tokens_ttl', 10, 1 );
+function ptc_get_request_tokens_ttl( $ttl ) {
+  return 5 * MINUTE_IN_SECONDS;
+}
+```
+
+You may also increase the cache duration, such as using 1 hour:
+
+```php
+add_filter( 'ptc_completionist_request_tokens_ttl', 'ptc_get_request_tokens_ttl', 10, 1 );
+function ptc_get_request_tokens_ttl( $ttl ) {
+  return HOUR_IN_SECONDS;
+}
+```
+
+Refer to [WordPress's PHP time constants](https://codex.wordpress.org/Easier_Expression_of_Time_Constants) for other duration expressions.
+
+### Clearing the cache
+
+Cache entries relate to each WordPress post that contains Completionist shortcodes and are stored on an individual basis as postmeta. For this reason, cache entries are purged for a post whenever it is updated.
+
+To purge all cache entries across all posts, simply click *Save* next to [the *Frontend Authentication User* option](/completionist/getting-started/#set-a-frontend-authentication-user) in Completionist's Settings screen.
+
 ## [ptc_asana_project]
 
 Displays Asana project information and tasks.
 
 Only the "list" layout is currently used, but support for the "board" layout is planned to also be implemented.
 
-<div class="banner banner-warning">
-	<h3>Coming Soon</h3>
-  <p>This is the first frontend feature of Completionist! It will be available in the next version of Completionist—which will be released within a few days!</p>
-</div>
 
 **Attributes:**
 
