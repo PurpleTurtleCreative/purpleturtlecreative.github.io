@@ -26,6 +26,23 @@
     @include mq(lg) {
       margin-left: calc( ( 100% - #{$nav-width} - #{$content-width} ) / 2 );
     }
+
+    .main-content {
+
+      li {
+        margin: 0.5em 0;
+      }
+
+      .language-plaintext {
+        pre {
+          white-space: pre-wrap;
+        }
+      }
+
+      code {
+        padding: 0.2em 0.3em;
+      }
+    }
   }
 }
 
@@ -96,16 +113,35 @@
 // Typography
 //
 
-h1, .text-alpha {
-  font-weight: 800;
-}
-
+h1, .text-alpha,
 h2, .text-beta,
 h3, .text-gamma,
 h4, .text-delta,
 h5, .text-epsilon,
 h6, .text-zeta {
-  font-weight: 700;
+  font-weight: 800;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.03em;
+  margin: 2em 0 1rem !important;
+}
+
+h2:not(#table-of-contents) {
+  margin-top: 3em;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 3em;
+    margin: 0.8em 0 1em;
+    background: $grey-lt-200;
+  }
 }
 
 .ws-normal,
