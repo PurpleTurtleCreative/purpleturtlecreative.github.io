@@ -86,7 +86,19 @@ If you'd like to be fully transparent on your website, then you should choose so
 
 If you'd like to limit which tasks are viewable on your website, then you should choose someone with the same limited visibility within Asana.
 
-Since Completionist's shortcodes help you reduce (or even eliminate) the need to onboard clients or users into your Asana workspace, you may choose to create a generic "client" or "website" user in Asana. You can then connect this Asana account to a generic WordPress user (eg. "Asana User") on your website. By using this "dummy" user, you can freely control what Asana content is visible or hidden on your WordPress website—without needing to actually disrupt your team members who need greater visibility permissions.
+<div class="banner banner-info">
+  <h4 class="text-gamma" style="
+    text-transform: none;
+    margin-bottom: 0.8em;
+    letter-spacing: normal;
+  ">Pro Tip</h4>
+  <p>
+    Since Completionist's shortcodes help you reduce (or even eliminate) the need to onboard clients or users into your Asana workspace, you may choose to create a generic "client" or "website" user in Asana. You can then connect this Asana account to a generic WordPress user (eg. "Asana User") on your website.
+  </p>
+  <p>
+    By using this "dummy" user, you can freely control what Asana content is visible or hidden on your WordPress website—without needing to actually disrupt your team members who need greater visibility permissions.
+  </p>
+</div>
 
 ### Where is this setting?
 
