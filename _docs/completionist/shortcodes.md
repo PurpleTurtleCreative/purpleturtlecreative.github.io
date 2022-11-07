@@ -18,6 +18,12 @@ Display Asana tasks on your website to improve work transparency and collaborati
 
 ---
 
+<div class="banner banner-warning">
+  <p><strong>This page contains custom code snippets.</strong></p>
+  <p>Please seek a WordPress developer for guidance if you're not familiar with adding custom code to WordPress websites!</p>
+</div>
+
+
 ## Caching
 
 **Frontend requests are cached by default for 15 minutes.** This improves website performance by reducing the frequency that data is requested from Asana.
@@ -25,10 +31,6 @@ Display Asana tasks on your website to improve work transparency and collaborati
 ### Changing the cache TTL
 
 If you find that Asana data is not being updated often enough, you may implement the following filter hook.
-
-<div class="banner banner-warning">
-  Please seek a WordPress developer for guidance if you're not familiar with adding custom code to your website.
-</div>
 
 This reduces the cache duration to 5 minutes:
 
@@ -55,6 +57,36 @@ Refer to [WordPress's PHP time constants](https://codex.wordpress.org/Easier_Exp
 Cache entries relate to each WordPress post that contains Completionist shortcodes and are stored on an individual basis as postmeta. For this reason, cache entries are purged for a post whenever it is updated.
 
 To purge all cache entries across all posts, simply click *Save* next to [the *Frontend Authentication User* option](/completionist/getting-started/#set-a-frontend-authentication-user) in Completionist's Settings screen.
+
+## Untitled Project Sections
+
+Despite an Asana project seeming to have untitled sections or no sections at all, the Asana API provides these sections with placeholder names. To display the same experience, Completionist ignores those placeholder names.
+
+**By default, Completionist does not display these section titles:**
+
+- `(no section)`
+- `Untitled section`
+
+You may choose to override which project section names are ignored by filtering the list of erased names. The Asana project's GID and request configuration arguments are also provided for context.
+
+This will allow all section names to be displayed, including Asana's placeholder names:
+
+```php
+add_filter( 'ptc_completionist_project_section_names_to_erase', 'ptc_get_project_section_names_to_erase', 10, 3 );
+function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
+  return array();
+}
+```
+
+This will add another section name to be erased:
+
+```php
+add_filter( 'ptc_completionist_project_section_names_to_erase', 'ptc_get_project_section_names_to_erase', 10, 3 );
+function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
+  $names[] = 'Section Name';
+  return $names;
+}
+```
 
 ## [ptc_asana_project]
 
