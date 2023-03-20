@@ -92,7 +92,9 @@ function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
 
 Displays Asana project information and tasks.
 
-Only the "list" layout is currently used, but support for the "board" layout is planned to also be implemented.
+<div class="banner banner-info">
+  <p>Only "list" layout is currently displayed, but support for other layouts like "board" and "calendar" are coming soon!</p>
+</div>
 
 
 **Attributes:**
@@ -115,11 +117,16 @@ Only the "list" layout is currently used, but support for the "board" layout is 
   - If enabled, completed tasks will be shown (if any) and all "checkmark bubbles" will be displayed.
   - This setting also applies to subtasks.
 - `show_tasks_due` – Optional. Set to "false" to hide tasks' due dates. Default "true".
+- `show_tasks_attachments` – Optional. Set to "false" to hide tasks' additional attachments. Default "true".
+  - Inline attachments in the tasks' descriptions will still be displayed if `show_tasks_description="true"`.
+  - Currently, images are the only supported types of attachments.
+
 
 **Quick Copy:**
 
 ```
-[ptc_asana_project src="" auth_user="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true"]
+[ptc_asana_project src="<ASANA_PROJECT_URL>" auth_user="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true"]
 ```
 
 *Remember to set the `src` attribute to the URL of the Asana project that you'd like to display!*
+
