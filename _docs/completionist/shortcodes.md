@@ -54,9 +54,9 @@ Refer to [WordPress's PHP time constants](https://codex.wordpress.org/Easier_Exp
 
 ### Clearing the cache
 
-Cache entries relate to each WordPress post that contains Completionist shortcodes and are stored on an individual basis as postmeta. For this reason, cache entries are purged for a post whenever it is updated.
+Cache entries relate to each WordPress post that contains Completionist shortcodes and are stored on an individual basis as postmeta. For this reason, cache entries are purged for a post whenever it is updated. To ensure your Asana updates are immediately reflected on WordPress, you can simply click "Update" in the WordPress post editor to clear the Asana cache for that post.
 
-To purge all cache entries across all posts, simply click *Save* next to [the *Frontend Authentication User* option](/completionist/getting-started/#set-a-frontend-authentication-user) in Completionist's Settings screen.
+To purge all Asana cache entries across all posts, simply click *Save* next to [the *Frontend Authentication User* option](/completionist/getting-started/#set-a-frontend-authentication-user) in Completionist's Settings screen.
 
 ## Untitled Project Sections
 
