@@ -65,7 +65,9 @@ Despite an Asana project seeming to have untitled sections or no sections at all
 **By default, Completionist does not display these section titles:**
 
 - `(no section)`
+- `untitled section`
 - `Untitled section`
+- `Untitled Section`
 
 You may choose to override which project section names are ignored by filtering the list of erased names. The Asana project's GID and request configuration arguments are also provided for context.
 
@@ -104,6 +106,9 @@ Displays Asana project information and tasks.
 - `auth_user` – Optional. A WordPress user's ID to authenticate the Asana API requests.
   - By default, the *[Frontend Authentication User](/completionist/getting-started/#set-a-frontend-authentication-user)* saved in Completionist's settings is used.
   - The WordPress user must be connected to Asana via Completionist in wp-admin, or you may see a `401 Unauthorized` error on your website.
+- `exclude_sections` – Optional. A comma-separated list of the names of the Asana project sections to exclude from display. Default "" (empty) to display all sections within the Asana project.
+  - Note that HTML entities are encoded to keep compatibility with the WordPress Block Editor. For example, `exclude_sections="Design &amp; Development"` will exclude project sections named `Design & Development`.
+
 - `show_name` – Optional. Set to "false" to hide the project's name. Default "true".
 - `show_description` – Optional. Set to "false" to hide the project's description. Default "true".
 - `show_status` – Optional. Set to "false" to hide the project's current status update and completion status. Default "true".
@@ -119,13 +124,15 @@ Displays Asana project information and tasks.
 - `show_tasks_due` – Optional. Set to "false" to hide tasks' due dates. Default "true".
 - `show_tasks_attachments` – Optional. Set to "false" to hide tasks' additional attachments. Default "true".
   - Inline attachments in the tasks' descriptions will still be displayed if `show_tasks_description="true"`.
-  - Currently, images are the only supported types of attachments.
+  - The following file extensions are supported:
+    - Images: `jpg`, `jpeg`, `png`, `bmp`, `gif`
+    - Videos: `mp4`
+- `show_tasks_tags` – Optional. Set to "false" to hide tasks' tags. Default "true".
 
-
-**Quick Copy:**
+**Quick Copy (with default values):**
 
 ```
-[ptc_asana_project src="<ASANA_PROJECT_URL>" auth_user="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true"]
+[ptc_asana_project src="<ASANA_PROJECT_URL>" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true"]
 ```
 
 *Remember to set the `src` attribute to the URL of the Asana project that you'd like to display!*
