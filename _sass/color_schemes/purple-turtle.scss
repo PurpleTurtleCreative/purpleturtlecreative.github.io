@@ -1,16 +1,13 @@
 // Defaults https://github.com/just-the-docs/just-the-docs/blob/main/_sass/support/_variables.scss
 
-//
 // Font size
 // `-sm` suffix is the size at the small (and above) media query
 
-$font-size-1: 9px;
-$font-size-1-sm: 10px;
-$font-size-2: 11px; // h4 - uppercased!, h6 not uppercased, text-small
-$font-size-3: 12px; // h5
-$font-size-4: 14px;
-$font-size-5: 16px; // h3
-$font-size-6: 18px; // h2
+$font-size-2: 12px; // h4 - uppercased!, h6 not uppercased, text-small
+$font-size-3: 14px; // h5
+$font-size-4: 16px; // html root mobile
+$font-size-5: 18px; // html root desktop, h3
+$font-size-6: 20px; // h2
 $font-size-7: 24px;
 $font-size-8: 32px; // h1
 $font-size-9: 36px;
