@@ -135,5 +135,7 @@ Displays Asana project information and tasks.
 [ptc_asana_project src="<ASANA_PROJECT_URL>" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true"]
 ```
 
-*Remember to set the `src` attribute to the URL of the Asana project that you'd like to display!*
+<div class="banner banner-warning">
+  <p><strong>Remember</strong> to change the <code>src</code> attribute value to the URL of the Asana project that you'd like to display!</p>
+</div>
 
