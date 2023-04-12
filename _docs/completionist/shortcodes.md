@@ -95,14 +95,14 @@ function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
 Displays Asana project information and tasks.
 
 <div class="banner banner-info">
-  <p>Only "list" layout is currently displayed, but support for other layouts like "board" and "calendar" are coming soon!</p>
+  <p>Only "list" layout is displayed in the free version of Completionist. Additional layouts such as "calendar" are available to Completionist Pro users only.</p>
 </div>
-
 
 **Attributes:**
 
 - `src` – **Required.** The Asana project link.
   - When viewing a project in Asana, copy the URL in the web browser address bar (eg. `https://app.asana.com/0/1234567890/list`) or the URL from clicking "Copy project link" in the project's detail dropdown (eg. `https://app.asana.com/0/1234567890/1234567890`).
+  - ⭐️ **Pro users** can display an Asana project in calendar layout by using the project's Calendar view link (eg. `https://app.asana.com/0/1234567890/calendar`) 
 - `auth_user` – Optional. A WordPress user's ID to authenticate the Asana API requests.
   - By default, the *[Frontend Authentication User](/completionist/getting-started/#set-a-frontend-authentication-user)* saved in Completionist's settings is used.
   - The WordPress user must be connected to Asana via Completionist in wp-admin, or you may see a `401 Unauthorized` error on your website.
@@ -138,4 +138,3 @@ Displays Asana project information and tasks.
 <div class="banner banner-warning">
   <p><strong>Remember</strong> to change the <code>src</code> attribute value to the URL of the Asana project that you'd like to display!</p>
 </div>
-
