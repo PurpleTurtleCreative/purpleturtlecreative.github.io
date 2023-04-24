@@ -35,30 +35,30 @@ This sample code enqueues a custom JavaScript file and CSS stylesheet whenever [
 
 ```php
 add_action(
-	'ptc_completionist_shortcode_enqueue_assets',
-	'custom_completionist_shortcode_enqueue_assets',
-	10,
-	1
+  'ptc_completionist_shortcode_enqueue_assets',
+  'custom_completionist_shortcode_enqueue_assets',
+  10,
+  1
 );
 
 function custom_completionist_shortcode_enqueue_assets( string $shortcode_tag ) {
-	if ( 'ptc_asana_project' === $shortcode_tag ) {
+  if ( 'ptc_asana_project' === $shortcode_tag ) {
     
-		wp_enqueue_script(
-			'custom-asana-project-script',
-			plugins_url( '/assets/js/script.js' , __FILE__ ),
-			array( 'ptc-completionist-shortcode-asana-project' ),
-			'1.0.0',
-			true
-		);
+    wp_enqueue_script(
+      'custom-asana-project-script',
+      plugins_url( '/assets/js/script.js' , __FILE__ ),
+      array( 'ptc-completionist-shortcode-asana-project' ),
+      '1.0.0',
+      true
+    );
     
-		wp_enqueue_style(
-			'custom-asana-project-styles',
-			plugins_url( '/assets/css/styles.css' , __FILE__ ),
-			array( 'ptc-completionist-shortcode-asana-project' ),
-			'1.0.0'
-		);
-	}
+    wp_enqueue_style(
+      'custom-asana-project-styles',
+      plugins_url( '/assets/css/styles.css' , __FILE__ ),
+      array( 'ptc-completionist-shortcode-asana-project' ),
+      '1.0.0'
+    );
+  }
 }
 ```
 
@@ -74,25 +74,25 @@ This example customizes the project section "Section" label text in Completionis
 
 ```js
 window.Completionist.hooks.addFilter(
-	'task_modal_project_section_label',
-	'completionist-pro',
-	( label, task ) => {
+  'task_modal_project_section_label',
+  'completionist-pro',
+  ( label, task ) => {
 
-		// Project section names acting as statuses.
-		const statuses = [
-			'To Do',
-			'In Progress',
-			'Needs Review',
-			'Done',
-		];
+    // Project section names acting as statuses.
+    const statuses = [
+      'To Do',
+      'In Progress',
+      'Needs Review',
+      'Done',
+    ];
     
-		if ( statuses.includes( task.project_section_name ) ) {
-			// Label the project section as a "Status".
-			label = 'Status';
-		}
+    if ( statuses.includes( task.project_section_name ) ) {
+      // Label the project section as a "Status".
+      label = 'Status';
+    }
 
-		return label;
-	}
+    return label;
+  }
 );
 ```
 
