@@ -2,6 +2,7 @@
 title: Shortcodes
 parent: Completionist
 nav_order: 5
+has_children: true
 ---
 
 # Shortcodes
@@ -54,9 +55,21 @@ Refer to [WordPress's PHP time constants](https://codex.wordpress.org/Easier_Exp
 
 ### Clearing the cache
 
-Cache entries relate to each WordPress post that contains Completionist shortcodes and are stored on an individual basis as postmeta. For this reason, cache entries are purged for a post whenever it is updated. To ensure your Asana updates are immediately reflected on WordPress, you can simply click "Update" in the WordPress post editor to clear the Asana cache for that post.
+Frontend caching and security is managed by the `Request_Token` PHP class within Completionist. You can think of request tokens as WordPress nonces. All related data is stored within the `wp_ptc_completionist_request_tokens` database table.
 
-To purge all Asana cache entries across all posts, simply click *Save* next to [the *Frontend Authentication User* option](/completionist/getting-started/#set-a-frontend-authentication-user) in Completionist's Settings screen.
+Request tokens are created in PHP as they are needed, including their associated cache records. Feel free to truncate the table at any time, but note that any frontend HTML caching of your WordPress website might become out-of-sync. For this reason, you should also clear the PHP/HTML cache for each page that contains a Completionist shortcode.
+
+You can clear the request tokens database table by using PHP:
+
+```php
+// Require the Request_Token class file.
+require_once \PTC_Completionist\PLUGIN_PATH . 'src/public/class-request-token.php';
+// Delete all request token data, including cache records.
+\PTC_Completionist\Request_Token::delete_all();
+// @TODO - Clear HTML cache records.
+```
+
+
 
 ## Untitled Project Sections
 
