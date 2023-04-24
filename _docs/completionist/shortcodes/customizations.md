@@ -78,7 +78,7 @@ window.Completionist.hooks.addFilter(
 	'completionist-pro',
 	( label, task ) => {
 
-    // Project section names acting as statuses.
+		// Project section names acting as statuses.
 		const statuses = [
 			'To Do',
 			'In Progress',
@@ -87,7 +87,7 @@ window.Completionist.hooks.addFilter(
 		];
     
 		if ( statuses.includes( task.project_section_name ) ) {
-      // Label the project section as a "Status".
+			// Label the project section as a "Status".
 			label = 'Status';
 		}
 
