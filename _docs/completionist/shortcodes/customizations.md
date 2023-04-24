@@ -96,3 +96,17 @@ window.Completionist.hooks.addFilter(
 );
 ```
 
+### Finding available hooks
+
+The best way to find action and filter events that you can hook customizations into is by examining the following JavaScript global variables in your browser console:
+
+```js
+// Contains the action hooks that have fired for the given client session.
+window.console.log( window.Completionist.hooks.actions );
+// Contains the filter hooks that have fired for the given client session.
+window.console.log( window.Completionist.hooks.filters );
+```
+
+Note that these global variables only contain hooks that have executed at least once before you log their contents. This means you should interact with Completionist's elements until a behavior happens or a view is displayed that you want to hook into.
+
+If you need me to add more action or filter hooks, please [let me know](/#support)!
