@@ -75,7 +75,7 @@ This example customizes the project section "Section" label text in Completionis
 ```js
 window.Completionist.hooks.addFilter(
   'task_modal_project_section_label',
-  'completionist-pro',
+  'my-custom-plugin',
   ( label, task ) => {
 
     // Project section names acting as statuses.
