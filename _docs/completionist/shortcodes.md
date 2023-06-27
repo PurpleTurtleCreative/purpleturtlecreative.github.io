@@ -107,9 +107,7 @@ function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
 
 Displays Asana project information and tasks.
 
-<div class="banner banner-info">
-  <p>Only "list" layout is displayed in the free version of Completionist. Additional layouts such as "calendar" are available to Completionist Pro users only.</p>
-</div>
+Only "list" layout is displayed in the free version of Completionist. Additional layouts such as "calendar" are available to Completionist Pro users only.
 
 **Attributes:**
 
@@ -148,6 +146,28 @@ Displays Asana project information and tasks.
 [ptc_asana_project src="<ASANA_PROJECT_URL>" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true"]
 ```
 
+_**\*\*Remember** to change the `src` attribute value to the URL of the Asana project that you'd like to display!_
+
+
+## [ptc_asana_project_list]
+
+Displays a WordPress user's associated Asana projects' information and tasks.
+
 <div class="banner banner-warning">
-  <p><strong>Remember</strong> to change the <code>src</code> attribute value to the URL of the Asana project that you'd like to display!</p>
+  <p>⭐️ This shortcode is available to Completionist Pro users only.</p>
 </div>
+
+**Attributes:**
+
+This shortcode shares the same attributes as the singular `[ptc_asana_project]` shortcode plus the following:
+
+- `layout` – Optional. The Asana project layout for all listed projects. Default 'list'.
+  - Possible values are `list` and `calendar`
+- `user` – Optional. A WordPress user's ID to determine which Asana projects to list. Defaults to the currently logged-in user.
+  - See the "Asana Projects" setting in the WordPress user's profile to select which Asana projects the WordPress user is allowed to view.
+
+**Quick Copy (with default values):**
+
+```
+[ptc_asana_project_list layout="list" user="" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true"]
+```
