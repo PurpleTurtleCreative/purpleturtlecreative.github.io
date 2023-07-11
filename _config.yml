@@ -1,5 +1,5 @@
 # https://github.com/just-the-docs/just-the-docs
-remote_theme: just-the-docs/just-the-docs@v0.5.3
+remote_theme: just-the-docs/just-the-docs@v0.5.4
 # For options, see https://github.com/just-the-docs/just-the-docs/blob/main/docs/configuration.md
 title: "Purple Turtle Creative: Docs"
 # The subpath of your site, e.g. /blog

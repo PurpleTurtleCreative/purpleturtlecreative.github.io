@@ -3,6 +3,7 @@ title: Shortcodes
 parent: Completionist
 nav_order: 5
 has_children: true
+has_toc: false
 ---
 
 # Shortcodes
@@ -18,90 +19,6 @@ Display Asana tasks on your website to improve work transparency and collaborati
 {:toc}
 
 ---
-
-<div class="banner banner-warning">
-  <p><strong>This page contains custom code snippets.</strong></p>
-  <p>Please seek a WordPress developer for guidance if you're not familiar with adding custom code to WordPress websites!</p>
-</div>
-
-
-## Caching
-
-**Frontend requests are cached by default for 15 minutes.** This improves website performance by reducing the frequency that data is requested from Asana.
-
-### Changing the cache TTL
-
-If you find that Asana data is not being updated often enough, you may implement the following filter hook.
-
-This reduces the cache duration to 5 minutes:
-
-```php
-add_filter( 'ptc_completionist_request_tokens_ttl', 'ptc_get_request_tokens_ttl', 10, 1 );
-function ptc_get_request_tokens_ttl( $ttl ) {
-  return 5 * MINUTE_IN_SECONDS;
-}
-```
-
-You may also increase the cache duration, such as using 1 hour:
-
-```php
-add_filter( 'ptc_completionist_request_tokens_ttl', 'ptc_get_request_tokens_ttl', 10, 1 );
-function ptc_get_request_tokens_ttl( $ttl ) {
-  return HOUR_IN_SECONDS;
-}
-```
-
-Refer to [WordPress's PHP time constants](https://codex.wordpress.org/Easier_Expression_of_Time_Constants) for other duration expressions.
-
-### Clearing the cache
-
-Frontend caching and security is managed by the `Request_Token` PHP class within Completionist. You can think of request tokens as WordPress nonces. All related data is stored within the `wp_ptc_completionist_request_tokens` database table.
-
-Request tokens are created in PHP as they are needed, including their associated cache records. Feel free to truncate the table at any time, but note that any frontend HTML caching of your WordPress website might become out-of-sync. For this reason, you should also clear the PHP/HTML cache for each page that contains a Completionist shortcode.
-
-You can clear the request tokens database table by using PHP:
-
-```php
-// Require the Request_Token class file.
-require_once \PTC_Completionist\PLUGIN_PATH . 'src/public/class-request-token.php';
-// Delete all request token data, including cache records.
-\PTC_Completionist\Request_Token::delete_all();
-// @TODO - Clear HTML cache records.
-```
-
-
-
-## Untitled Project Sections
-
-Despite an Asana project seeming to have untitled sections or no sections at all, the Asana API provides these sections with placeholder names. To display the same experience, Completionist ignores those placeholder names.
-
-**By default, Completionist does not display these section titles:**
-
-- `(no section)`
-- `untitled section`
-- `Untitled section`
-- `Untitled Section`
-
-You may choose to override which project section names are ignored by filtering the list of erased names. The Asana project's GID and request configuration arguments are also provided for context.
-
-This will allow all section names to be displayed, including Asana's placeholder names:
-
-```php
-add_filter( 'ptc_completionist_project_section_names_to_erase', 'ptc_get_project_section_names_to_erase', 10, 3 );
-function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
-  return array();
-}
-```
-
-This will add another section name to be erased:
-
-```php
-add_filter( 'ptc_completionist_project_section_names_to_erase', 'ptc_get_project_section_names_to_erase', 10, 3 );
-function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
-  $names[] = 'Section Name';
-  return $names;
-}
-```
 
 ## [ptc_asana_project]
 
@@ -139,11 +56,12 @@ Only "list" layout is displayed in the free version of Completionist. Additional
     - Images: `jpg`, `jpeg`, `png`, `bmp`, `gif`
     - Videos: `mp4`
 - `show_tasks_tags` – Optional. Set to "false" to hide tasks' tags. Default "true".
+- `show_tasks_comments` – ⭐️ **Pro Only** Optional. Set to "true" to display tasks' comments. Default "false".
 
 **Quick Copy (with default values):**
 
 ```
-[ptc_asana_project src="<ASANA_PROJECT_URL>" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true"]
+[ptc_asana_project src="<ASANA_PROJECT_URL>" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true" show_tasks_comments="false"]
 ```
 
 _**\*\*Remember** to change the `src` attribute value to the URL of the Asana project that you'd like to display!_
@@ -154,8 +72,9 @@ _**\*\*Remember** to change the `src` attribute value to the URL of the Asana pr
 Displays a WordPress user's associated Asana projects' information and tasks.
 
 <div class="banner banner-warning">
-  <p>⭐️ This shortcode is available to Completionist Pro users only.</p>
+  <p>⭐️ This shortcode is available to <strong>Completionist Pro</strong> users only.</p>
 </div>
+
 
 **Attributes:**
 
@@ -169,5 +88,5 @@ This shortcode shares the same attributes as the singular `[ptc_asana_project]` 
 **Quick Copy (with default values):**
 
 ```
-[ptc_asana_project_list layout="list" user="" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true"]
+[ptc_asana_project_list layout="list" user="" auth_user="" exclude_sections="" show_name="true" show_description="true" show_status="true" show_modified="true" show_due="true" show_tasks_description="true" show_tasks_assignee="true" show_tasks_subtasks="true" show_tasks_completed="true" show_tasks_due="true" show_tasks_attachments="true" show_tasks_tags="true" show_tasks_comments="false"]
 ```

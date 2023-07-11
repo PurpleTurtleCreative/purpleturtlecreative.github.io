@@ -23,8 +23,6 @@ Use PHP and JavaScript hooks to customize shortcode content, functionality, and 
   <p><strong>This page contains custom code snippets.</strong></p>
   <p>Please seek a WordPress developer for guidance if you're not familiar with adding custom code to WordPress websites!</p>
 </div>
-
-
 ## Enqueueing Custom Assets
 
 In the `'wp_footer'` action hook of WordPress, Completionist enqueues the scripts and styles for each of its shortcodes that have rendered for the current page load. As Completionist processes each detected shortcode tag, the `'ptc_completionist_shortcode_enqueue_assets'` action hook in PHP is executed for third-party customizations.
@@ -96,7 +94,7 @@ window.Completionist.hooks.addFilter(
 );
 ```
 
-### Finding available hooks
+### Finding Available JavaScript Hooks
 
 The best way to find action and filter events that you can hook customizations into is by examining the following JavaScript global variables in your browser console:
 
@@ -110,3 +108,35 @@ window.console.log( window.Completionist.hooks.filters );
 Note that these global variables only contain hooks that have executed at least once before you log their contents. This means you should interact with Completionist's elements until a behavior happens or a view is displayed that you want to hook into.
 
 If you need me to add more action or filter hooks, please [let me know](/#support)!
+
+## Untitled Project Sections
+
+Despite an Asana project seeming to have untitled sections or no sections at all, the Asana API provides these sections with placeholder names. To display the same experience, Completionist ignores those placeholder names.
+
+**By default, Completionist does not display these section titles:**
+
+- `(no section)`
+- `untitled section`
+- `Untitled section`
+- `Untitled Section`
+
+You may choose to override which project section names are ignored by filtering the list of erased names. The Asana project's GID and request configuration arguments are also provided for context.
+
+This will allow all section names to be displayed, including Asana's placeholder names:
+
+```php
+add_filter( 'ptc_completionist_project_section_names_to_erase', 'ptc_get_project_section_names_to_erase', 10, 3 );
+function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
+  return array();
+}
+```
+
+This will add another section name to be erased:
+
+```php
+add_filter( 'ptc_completionist_project_section_names_to_erase', 'ptc_get_project_section_names_to_erase', 10, 3 );
+function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
+  $names[] = 'Section Name';
+  return $names;
+}
+```
