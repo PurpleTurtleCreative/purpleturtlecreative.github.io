@@ -123,6 +123,25 @@
   letter-spacing: .03em;
 }
 
+// Tables
+table {
+  border-collapse: collapse;
+
+  th,
+  td {
+    vertical-align: baseline;
+    border-color: $grey-lt-300;
+  }
+
+  thead tr th {
+    background-color: $grey-lt-100;
+  }
+
+  tbody tr:nth-child(even) td {
+    background-color: $grey-lt-000;
+  }
+}
+
 //
 // Typography
 //
