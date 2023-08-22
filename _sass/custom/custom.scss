@@ -124,13 +124,18 @@
 }
 
 // Tables
+.table-wrapper {
+  box-shadow: none;
+}
+
 table {
   border-collapse: collapse;
+  border: 1px solid $grey-lt-300;
 
   th,
   td {
     vertical-align: baseline;
-    border-color: $grey-lt-300;
+    border: 1px solid $grey-lt-300;
   }
 
   thead tr th {
