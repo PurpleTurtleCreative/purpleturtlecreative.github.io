@@ -140,3 +140,11 @@ function ptc_get_project_section_names_to_erase( $names, $project_gid, $args ) {
   return $names;
 }
 ```
+
+## Custom Add-On Plugin Example
+
+A common request from users of Completionist is to add support for Asana Business features such as [*Custom Fields*](https://asana.com/features/project-management/custom-fields). While Completionist does not currently support premium Asana features at this time, we make hooks available to help you implement these features as needed.
+
+You can access a free add-on plugin on GitHub to get started at [https://github.com/PurpleTurtleCreative/completionist-custom-fields](https://github.com/PurpleTurtleCreative/completionist-custom-fields)
+
+Downloading this plugin from GitHub and installing it alongside Completionist on your WordPress website will cause custom fields to be displayed on tasks in [Project Embeds](/completionist/shortcodes/).
