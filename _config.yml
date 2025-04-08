@@ -17,6 +17,13 @@ color_scheme: "purple-turtle"
 # Enable or disable the site search
 search_enabled: true
 
+# External navigation links
+nav_external_links:
+  - title: Completionist
+    url: /completionist/
+    hide_icon: true # set to true to hide the external link icon - defaults to false
+    opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
+
 # Aux links for the upper right navigation
 aux_links:
   "View on GitHub":
@@ -47,32 +54,6 @@ gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into t
 ga_tracking: "G-2EB267PFG4"
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
 
-# Define Jekyll collections
-collections:
-  docs:
-    permalink: "/:path/"
-    output: true
-# Define which collections are used in just-the-docs
-just_the_docs:
-  collections:
-    docs:
-      name: Docs
-
 # Enable plugins
 plugins:
   - jekyll-remote-theme # allows this to be run locally by loading the remote theme
-
-# Front Matter defaults: https://jekyllrb.com/docs/configuration/front-matter-defaults/
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "" # only _docs collection members
-    values:
-      layout: null
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "docs" # only _docs collection members
-    values:
-      layout: "default"
